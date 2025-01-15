@@ -61,10 +61,7 @@ const eslintConfig = [
           },
         },
       ], // Enforce import order
-      "prettier/prettier": [
-        "error",
-        { endOfLine: "auto", singleQuote: false, parser: "flow" },
-      ], // Prettier rules
+      "prettier/prettier": ["error", { endOfLine: "auto", singleQuote: false }], // Prettier rules
       "no-unused-vars": ["error"],
       "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
       "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
