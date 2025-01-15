@@ -1,5 +1,4 @@
-"use client";
-
+import "server-only";
 import Image from "next/image";
 
 const Home = () => {
