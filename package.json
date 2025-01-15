@@ -10,6 +10,7 @@
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --write .",
     "format": "npm run prettier && npm run lint:fix",
+    "type:check": "tsc --noEmit",
     "prepare": "husky"
   },
   "dependencies": {
