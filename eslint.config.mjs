@@ -62,7 +62,17 @@ const eslintConfig = [
         },
       ], // Enforce import order
       "prettier/prettier": ["error", { endOfLine: "auto", singleQuote: false }], // Prettier rules
-      "no-unused-vars": ["error"],
+      "no-unused-vars": [
+        "error",
+        {
+          vars: "all",
+          args: "after-used",
+          caughtErrors: "all",
+          ignoreRestSiblings: false,
+          reportUsedIgnorePattern: false,
+          argsIgnorePattern: "^_", // Ignore args starting with _
+        },
+      ],
       "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
       "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
       "tailwindcss/classnames-order": "warn", // Enforce Tailwind CSS classnames order
