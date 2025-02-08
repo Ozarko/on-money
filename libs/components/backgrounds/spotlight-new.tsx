@@ -21,7 +21,7 @@ export const Spotlight = ({
   translateY = -350,
   width = 560,
   height = 1380,
-  smallWidth = 240,
+  smallWidth = 340,
   duration = 7,
   xOffset = 100,
 }: SpotlightProps = {}) => {
@@ -34,7 +34,7 @@ export const Spotlight = ({
         opacity: 1,
       }}
       transition={{
-        duration: 1.5,
+        duration: 4,
       }}
       className="pointer-events-none absolute inset-0 h-full w-full"
     >
@@ -57,7 +57,7 @@ export const Spotlight = ({
             width: `${width}px`,
             height: `${height}px`,
           }}
-          className={`absolute left-0 top-0`}
+          className={`absolute left-0 top-0 hidden md:block`}
         />
 
         <div
@@ -67,7 +67,7 @@ export const Spotlight = ({
             width: `${smallWidth}px`,
             height: `${height}px`,
           }}
-          className={`absolute left-0 top-0 origin-top-left`}
+          className={`absolute left-0 top-0 hidden origin-top-left md:block`}
         />
 
         <div
@@ -77,7 +77,7 @@ export const Spotlight = ({
             width: `${smallWidth}px`,
             height: `${height}px`,
           }}
-          className={`absolute left-0 top-0 origin-top-left`}
+          className={`absolute left-0 top-0 hidden origin-top-left md:block`}
         />
       </motion.div>
 

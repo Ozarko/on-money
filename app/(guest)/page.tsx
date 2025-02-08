@@ -1,13 +1,13 @@
 import "server-only";
-import { Spotlight } from "@components/hero/spotlight-new";
-import { GridPatternDashed } from "@components/layout/grid-pattern";
+import { GridPatternDashed } from "@components/backgrounds/grid-pattern";
+import { Spotlight } from "@components/backgrounds/spotlight-new";
 
 const Home = () => {
   return (
     <>
-      <GridPatternDashed className="fixed left-0 top-0 h-screen w-screen" />
+      <GridPatternDashed className="fixed left-0 top-0 h-screen w-screen bg-background" />
       <div
-        className="relative flex h-screen w-full overflow-hidden rounded-md bg-background/[0.96] antialiased md:items-center md:justify-center"
+        className="relative flex h-screen w-full items-center justify-center overflow-hidden rounded-md bg-background/[0.96] antialiased"
         style={{ backgroundColor: "var(--background-color)" }}
       >
         <Spotlight />
@@ -16,14 +16,14 @@ const Home = () => {
             className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl"
             style={{ color: "var(--text-color)" }}
           >
-            Spotlight <br /> which is not overused.
+            ON MONEY
           </h1>
           <p
-            className="mx-auto mt-4 max-w-lg text-center text-base font-normal"
+            className="mx-auto mt-4 max-w-lg text-center text-2xl font-normal"
             style={{ color: "var(--secondary-text-color)" }}
           >
-            A subtle yet effective spotlight effect, because the previous
-            version is used a bit too much these days.
+            Найкращий спосіб вести облік ваших фінансів та керувати ними в
+            одному місці.
           </p>
         </div>
       </div>
