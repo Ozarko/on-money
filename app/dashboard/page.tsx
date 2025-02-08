@@ -12,7 +12,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/libs/atoms/sidebar";
-import { AppSidebar } from "@/libs/components/app-sidebar";
+import { AppSidebar } from "@/libs/components/layout/app-sidebar";
 
 export default function Page() {
   return (

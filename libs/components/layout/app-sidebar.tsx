@@ -21,9 +21,9 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/libs/atoms/sidebar";
-import { NavMain } from "@/libs/components/nav-main";
-import { NavProjects } from "@/libs/components/nav-projects";
-import { NavUser } from "@/libs/components/nav-user";
+import { NavMain } from "@/libs/components/layout/nav-main";
+import { NavProjects } from "@/libs/components/layout/nav-projects";
+import { NavUser } from "@/libs/components/layout/nav-user";
 
 // This is sample data.
 const data = {
